@@ -32,8 +32,8 @@ jobs:
 
             - name: Run script
               run: |
-                python scrapping_selenium.py
+                python scraping_selenium.py
 
             - name: Run Pytest
               run: |
-                pytest scrapping_selenium.py
+                pytest scraping_selenium.py
