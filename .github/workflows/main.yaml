@@ -8,7 +8,6 @@ on:
 jobs:
     test:
         runs-on: ubuntu-latest
-
         steps:
             - name: Checkout repository on the ubuntu
               uses: actions/checkout@v2
@@ -23,10 +22,6 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r requirements.txt
 
-            - name: Run script
-              run: |
-                python script_selenium.py
-
             - name: Run Pytest
               run: |
-                pytest script_selenium.py
+                pytest test_pytest.py
