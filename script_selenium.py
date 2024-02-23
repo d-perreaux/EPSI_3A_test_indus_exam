@@ -12,10 +12,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 class TestExamenIndustrialisation():
   def setup_method(self, method):
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--disable-dev-shm-usage')
-    self.driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", options=chrome_options)
+    self.driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver")
     self.vars = {}
   
   def teardown_method(self, method):
