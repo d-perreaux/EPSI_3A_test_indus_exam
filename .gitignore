@@ -1,2 +1,5 @@
 venv
 .vscode/PythonImportHelper-v2-Completion.json
+.venv
+.pytest_cache
+.idea
