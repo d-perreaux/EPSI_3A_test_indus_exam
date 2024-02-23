@@ -30,10 +30,6 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r requirements.txt
 
-            - name: Run script
-              run: |
-                python scraping_selenium.py
-
             - name: Run Pytest
               run: |
-                pytest scraping_selenium.py
+                pytest tests/test_pytest.py
