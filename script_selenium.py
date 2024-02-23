@@ -27,7 +27,7 @@ class TestExamenIndustrialisation():
     element = self.driver.find_element(By.CSS_SELECTOR, "body")
     actions = ActionChains(self.driver)
     time.sleep(2)
-    actions.move_to_element(element, 0, 0).perform()
+    actions.move_to_element(element).perform()
     time.sleep(2)
     self.driver.find_element(By.ID, "gender-male").click()
     time.sleep(2)
