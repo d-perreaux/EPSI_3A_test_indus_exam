@@ -11,7 +11,8 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 class TestExamenIndustrialisation():
   def setup_method(self, method):
-    self.driver = webdriver.Chrome()
+    chrome_options = webdriver.ChromeOptions()
+    self.driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver")
     self.vars = {}
   
   def teardown_method(self, method):
